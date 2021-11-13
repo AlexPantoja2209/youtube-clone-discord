@@ -21,11 +21,12 @@ export const Container = styled.div`
 
 //estilo do avatar
 export const Avatar = styled.div`
+  flex-shrink: 0;
   width: 40px;
   height: 40px;
   background-color: var(--secondary);
   border-radius: 50%;
-
+  
   &.bot {
     background-color: var(--mention-detail);
   }
