@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 
+//Container Geral
 export const Container = styled.div`
   display: flex;
   align-items: center;
-
   padding: 4px 16px;
   margin-right: 4px;
-
   background-color: transparent;
 
   &.mention {
     background-color: var(--mention-message);
-
     border-left: 2px solid var(--mention-detail);
     padding-left: 14px;
   }
@@ -21,10 +19,10 @@ export const Container = styled.div`
   }
 `;
 
+//estilo do avatar
 export const Avatar = styled.div`
   width: 40px;
   height: 40px;
-
   background-color: var(--secondary);
   border-radius: 50%;
 
@@ -33,15 +31,15 @@ export const Avatar = styled.div`
   }
 `;
 
+//estilo da menssagem
 export const Message = styled.div`
   min-height: 40px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   margin-left: 17px;
 `;
+
 
 export const Header = styled.div`
   display: flex;
@@ -54,7 +52,6 @@ export const Header = styled.div`
 
   > span {
     margin-left: 6px;
-
     background-color: var(--discord);
     color: var(--white);
     border-radius: 4px;
@@ -72,11 +69,13 @@ export const Header = styled.div`
   }
 `;
 
+
 export const Content = styled.div`
   text-align: left;
   font-size: 16px;
   color: var(--white);
 `;
+
 
 export const Mention = styled.span`
   color: var(--link);

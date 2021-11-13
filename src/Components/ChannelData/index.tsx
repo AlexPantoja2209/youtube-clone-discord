@@ -11,28 +11,29 @@ const ChannelData: React.FC = () => {
     const div = messagesRef.current;
 
     if (div) {
-      div.scrollTop = div.scrollHeight;
+      div.scrollTop = div.scrollHeight;   //scrolla a pagina para baixo 
     }
   }, [messagesRef]);
 
   return (
     <Container>
       <Messages ref={messagesRef}>
-        {Array.from(Array(15).keys()).map((n) => (
+        {Array.from(Array(15).keys()).map((n) => (    //repetir 15 vezes
+
           <ChannelMessage
             key={n}
-            author="Guilherme Rodz"
-            date="21/06/2020"
-            content="Hoje é o meu aniversário!"
+            author="Alex Pantoja"
+            date="13/11/2021"
+            content="Deus é fiel"
           />
         ))}
 
         <ChannelMessage
-          author="Diego Fernandes"
-          date="21/06/2020"
+          author="Jhonatan Gama"
+          date="13/11/2021"
           content={
             <>
-              <Mention>@Guilherme Rodz</Mention>, me carrega no LoL e CS de novo
+              <Mention>@Alex Pantoja</Mention>, me carrega no LoL e CS de novo
               por favor?
             </>
           }

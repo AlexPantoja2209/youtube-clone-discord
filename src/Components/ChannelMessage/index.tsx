@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Container, Avatar, Message, Header, Content } from './styles';
 export { Mention } from './styles';
 
@@ -19,8 +18,8 @@ const ChannelMessage: React.FC<Props> = ({
   isBot,
 }) => {
   return (
-    <Container className={hasMention ? 'mention' : ''}>
-      <Avatar className={isBot ? 'bot' : ''} />
+    <Container className={hasMention ? 'mention' : ''}>   {/*condição para as mentions*/}
+      <Avatar className={isBot ? 'bot' : ''} />           {/*condição se for BOT*/}
 
       <Message>
         <Header>
