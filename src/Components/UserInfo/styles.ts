@@ -1,37 +1,41 @@
 import styled from 'styled-components';
 import { Mic, Headset, Settings } from 'styled-icons/material';
 
+
+//container para todos os itens do UserInfo
 export const Container = styled.div`
   grid-area: UI;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 10px;
   background-color: var(--quaternary);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
 `;
+
 
 export const Profile = styled.div`
   display: flex;
   align-items: center;
 `;
 
+//icone do avatar
 export const Avatar = styled.div`
   width: 32px;
   height: 32px;
   border-radius: 50%;
-
   background-color: var(--gray);
 `;
 
+//dados do usuario
 export const UserData = styled.div`
   margin-left: 8px;
-
   display: flex;
   flex-direction: column;
 
+
+  //estilo do nome
+  //==========================
   > strong {
     color: var(--white);
     font-size: 13px;
@@ -42,8 +46,12 @@ export const UserData = styled.div`
     color: var(--gray);
     font-size: 13px;
   }
+  //==========================
 `;
 
+
+//icones da direita
+//========================================
 export const Icons = styled.div`
   display: flex;
   align-items: center;
@@ -56,11 +64,9 @@ export const Icons = styled.div`
 export const MicIcon = styled(Mic)`
   width: 20px;
   height: 20px;
-
   color: var(--white);
   opacity: 0.7;
   cursor: pointer;
-
   transition: opacity 0.2s;
 
   &:hover {
@@ -71,11 +77,9 @@ export const MicIcon = styled(Mic)`
 export const HeadphoneIcon = styled(Headset)`
   width: 20px;
   height: 20px;
-
   color: var(--white);
   opacity: 0.7;
   cursor: pointer;
-
   transition: opacity 0.2s;
 
   &:hover {
@@ -86,14 +90,13 @@ export const HeadphoneIcon = styled(Headset)`
 export const SettingsIcon = styled(Settings)`
   width: 20px;
   height: 20px;
-
   color: var(--white);
   opacity: 0.7;
   cursor: pointer;
-
   transition: opacity 0.2s;
 
   &:hover {
     opacity: 1;
   }
+  //========================================
 `;

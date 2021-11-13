@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { Hashtag } from 'styled-icons/heroicons-outline';
 
 
+
+
 //container 
 export const Container = styled.div`
   grid-area: CI;
@@ -13,8 +15,10 @@ export const Container = styled.div`
   background-color: var(--primary);
 
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
-  z-index: 2;
+  z-index: 2;   // isso fará com que a barra se sobressaia dos outros componentes
 `;
+
+
 
 //hashtag sendo chamada pelo styled-icons
 export const HashtagIcon = styled(Hashtag)`
@@ -23,6 +27,8 @@ export const HashtagIcon = styled(Hashtag)`
 
   color: var(--symbol);
 `;
+
+
 
 //titulo
 export const Title = styled.h1`
