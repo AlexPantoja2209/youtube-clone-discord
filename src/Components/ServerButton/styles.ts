@@ -6,7 +6,7 @@ export const Button = styled.button<Props>`
   display: flex;
   align-items: center; // centro vertical 
   justify-content: center; // centro horizontal
-  flex-shrink: 0;
+  flex-shrink: 0;   //não "espreme" o componente quando aumenta a tela
 
   width: 48px;
   height: 48px;
